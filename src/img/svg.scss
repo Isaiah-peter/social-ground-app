@@ -1,0 +1,13 @@
+@import "../varaible.scss";
+
+svg {
+  vertical-align: baseline;
+}
+
+.icon-light {
+  stroke: $primary-white;
+}
+
+.iw-16 {
+  width: 16px !important;
+}

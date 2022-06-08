@@ -1,0 +1,150 @@
+.login-section {
+  background-image: url("https://themes.pixelstrap.com/friendbook/assets/images/login/login-bg.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  & .app-name {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .theme-form {
+    margin-top: 30px;
+  }
+
+  & .login-form {
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: auto;
+    padding: 50px;
+
+    & .login-title h2 {
+      font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+      color: #51595e;
+      text-align: left;
+    }
+
+    & .login-desc {
+      text-align: left;
+      margin-top: 22px;
+
+      & h3 {
+        font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+        color: #51595e;
+        text-transform: capitalize;
+        font-family: 600;
+      }
+
+      & h4 {
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 7px;
+        color: #647589b3;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+      }
+    }
+
+    .form-sec {
+      & .form-group {
+        margin-bottom: 1rem;
+        text-align: left;
+        position: relative;
+
+        & label {
+          color: #51595e;
+          font-weight: 600;
+          font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+          text-transform: capitalize;
+          margin-bottom: 10px;
+        }
+
+        & .form-control {
+          padding: 10px 20px;
+          border-color: #6475891a;
+          color: #647589;
+          border-radius: 10px;
+          height: auto;
+        }
+
+        .password-display {
+          position: absolute;
+          right: 20px;
+          bottom: 13px;
+          width: 20px;
+        }
+      }
+    }
+
+    .bottom-sec {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .ms-auto {
+        text-decoration: none;
+      }
+    }
+
+    .button-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .btn {
+        width: 40%;
+        background-color: #0389c9;
+      }
+    }
+  }
+}
+
+.appname {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.desc {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .login-section {
+    background-position: bottom left;
+
+    & .login-form {
+      width: 100%;
+      padding: 20px 30px;
+
+      .bottom-sec,
+      .button-section {
+        display: block;
+        text-align: left;
+
+        .btn-lg {
+          width: 100%;
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
