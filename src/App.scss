@@ -4,3 +4,16 @@
   font-family: "Roboto";
   text-align: center;
 }
+
+ul {
+  list-style-type: none;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0 !important;
+}
+
+h3 {
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  margin: 0;
+  margin-right: 0;
+}
