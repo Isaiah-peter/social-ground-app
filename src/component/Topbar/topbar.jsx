@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./topbar.scss"
-import Icons from "../img/index"
+import Icons from "../../img/index"
 import "lazysizes"
 
 const Topbar = () => {
@@ -49,12 +49,12 @@ const Topbar = () => {
             <ul className="btn-group">
                 <li className="header-btn home-btn">
                   <a href="#" className='main-link'>
-                    <img src={Home} alt="icon" />
+                    <Home />
                   </a>
                 </li>
                 <li className="header-btn custom-dropdown dropdown-lg add-friend">
                   <a type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onClick={openReqest} >
-                    <img src={Addfriend} alt="icon" />
+                    <Addfriend />
                   </a>
 
                   <div className="dropdown-menu" style={isOpenRequest ? {display: `${isOpenRequest ? "block": "none"}`, position: "absolute", margin:0 , transform: "translate(0,  20px)", inset: "0px auto auto 0px"} : {}} >
@@ -152,7 +152,7 @@ const Topbar = () => {
             <ul className="option-list">
             <li className="header-btn custom-dropdown dropleft btn-group dropdown-lg chat">
                   <a type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onClick={openChat} >
-                    <img src={ChatIcon} alt="icon" />
+                    <ChatIcon />
                     <span className="count success">2</span>
                   </a>
 

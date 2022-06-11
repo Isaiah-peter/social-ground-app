@@ -1,5 +1,5 @@
 /* stylelint-disable no-descending-specificity */
-@import "../varaible.scss";
+@import "../../varaible.scss";
 
 .dropdown-menu {
   background-color: $primary-white;
@@ -89,7 +89,6 @@ header {
           h4 {
             color: $primary-white;
             font-weight: 500;
-            font-size: calc(16px + (13 - 11) * ((100vw - 320px) / (1920 - 320)));
             text-transform: capitalize;
             margin-bottom: 0;
             margin-top: 0;
@@ -100,7 +99,6 @@ header {
           span {
             color: #ffffff94;
             text-transform: capitalize;
-            font-size: 16px;
             align-self: start;
           }
         }
@@ -185,7 +183,6 @@ header {
 
           .form-control {
             width: 250px;
-            font-size: calc(11px + (12 - 11) * ((100vw - 320px) / (1920 - 320)));
             text-transform: capitalize;
             padding: 13px 10px 13px 50px;
             background-color: #ffffff1a;
@@ -249,7 +246,6 @@ header {
         background-color: #edf7fb;
         border: none;
         padding: 10px;
-        font-size: calc(11px + (12 - 11) * ((100vw - 320px) / (1920 - 320)));
         text-transform: capitalize;
         color: #647589;
         border-radius: 5px;
@@ -290,7 +286,6 @@ header {
 
     span {
       color: $primary-grey;
-      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 600;
       text-transform: capitalize;
     }
@@ -374,14 +369,12 @@ header {
               text-transform: capitalize;
               font-weight: 600;
               margin-bottom: 3px;
-              font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
             }
 
             h6 {
               text-transform: capitalize;
               color: #647589;
               font-weight: 500;
-              font-size: calc(11px + (12 - 11) * ((100vw - 320px) / (1920 - 320)));
               margin: 0;
             }
           }
@@ -452,7 +445,7 @@ option-list
 
       .count {
         position: absolute;
-        padding: 2px 6px;
+        padding: 1px 6px;
         border-radius: 100%;
         top: -7px;
         right: 8px;
