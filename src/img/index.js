@@ -19,10 +19,11 @@ import { ReactComponent as MaxIcon } from "./max.svg"
 import { ReactComponent as Setting } from "./setting.svg"
 import { ReactComponent as UserIcon } from "./user.svg"
 import { ReactComponent as MooonIcon } from "./moon.svg"
+import {ReactComponent as Cancel } from "./cancel.svg"
 
 
 const Icons = () => {
-    return {MooonIcon,DotMenu, EditSvg, HelpIcon, LogoutIcon, MaxIcon, Setting, UserIcon, Addfriend, ChatIcon, Event, Favorite, Group, Home, MenuIcon, Music, Newfeed, Notification, Weather, Search}
+    return {MooonIcon,DotMenu, Cancel ,EditSvg, HelpIcon, LogoutIcon, MaxIcon, Setting, UserIcon, Addfriend, ChatIcon, Event, Favorite, Group, Home, MenuIcon, Music, Newfeed, Notification, Weather, Search}
 }
 
 

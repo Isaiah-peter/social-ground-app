@@ -1,0 +1,64 @@
+@import "../../varaible.scss";
+@import "../../mixins.scss";
+
+.online-user-container {
+  width: 96px;
+  position: fixed;
+  padding: 0 20px 25px;
+  top: 100px;
+  right: 30px;
+  background-color: $primary-white;
+  border-radius: 5px;
+
+  .search-bar {
+    position: relative;
+    height: 94px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #6475891a;
+    transition: all 2s;
+
+    @include abs-flex;
+
+    .cancel-icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $body-color;
+      border-radius: 5px;
+    }
+
+    .search-friends {
+      position: absolute;
+      width: 250px;
+      right: 0;
+      background-color: $body-color;
+      height: 50px;
+      border-radius: 5px;
+
+      @include abs-flex;
+
+      .form-control {
+        background-color: inherit;
+        border: none;
+      }
+
+      .form-control:focus {
+        box-shadow: none;
+        border: none;
+      }
+
+      .search-icon.cancel {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+      }
+    }
+  }
+
+  .online-users {
+    padding-top: 30px;
+  }
+}
