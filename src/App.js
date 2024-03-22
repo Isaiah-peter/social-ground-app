@@ -1,17 +1,27 @@
+import { useEffect, useState } from 'react';
 import './App.scss';
-import RightBar from './component/Sidebars/RightBar';
-import Sidebar from './component/Sidebars/Sidebar';
-import Topbar from './component/Topbar/topbar';
-import Login from './page/authfolder/login';
+import Home from './page/home/Home';
 import Register from './page/authfolder/register';
+import Login  from "./page/authfolder/login"
 
 function App() {
+  const [login, isLogin] = useState(false)
+
+  useEffect(() => {
+    isLogin(true)
+  })
+
   return (
-  <div className="container-fluid panel-body custom-body">
-    <Topbar />
-    <Sidebar />
-    <RightBar />
-  </div>
+    <div>
+      {
+        login ?
+        (
+          <Home />
+          ) : (
+            <Login />
+        )
+      }
+    </div>
   );
 }
 

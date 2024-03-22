@@ -48,7 +48,7 @@ const Register = () => {
                   </div>
                   <div className="button-section">
                     <a href="#" className="btn btn-solid btn-lg btn-primary">Sign Up</a>
-                    <a href="#" className="btn btn-solid btn-lg ms-auto btn-primary">Login</a>
+                    <a href="#" className="btn btn-solid btn-lg ms-auto btn-primary">Register</a>
                   </div>
                 </div>
               </div>

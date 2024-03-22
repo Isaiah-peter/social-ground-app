@@ -1,0 +1,91 @@
+@import "../../mixins.scss";
+@import "../../varaible.scss";
+
+.floatmessenger-container {
+  width: 300px;
+  background-color: $primary-white;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 0;
+  flex-direction: column;
+
+  @include flex;
+
+  .top {
+    padding: 20px;
+    width: inherit;
+    box-shadow: 0 6px  2px #00000008;
+
+    @include flex;
+
+    .userimage {
+      border-radius: 50%;
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-origin: border-box;
+    }
+
+    .username {
+      color: black;
+      width: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 0;
+    }
+
+    .close {
+      margin-left: auto;
+    }
+  }
+
+  .center {
+    font-size: 14px;
+    padding: 10px;
+    height: 220px;
+    width: inherit;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    .msg-add {
+      width: 100%;
+      display: flex;
+    }
+
+    p {
+      padding: 5px 10px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      max-width: 50%;
+    }
+
+    .sentmessage {
+      background-color: #edf7fb;
+      margin-left: auto;
+    }
+
+    .receivemessage {
+      text-align: left;
+    }
+  }
+
+  .bottom {
+    box-shadow: 0 -6px 6px 0 #00000008;
+    padding: 10px;
+    width: inherit;
+
+    @include flex;
+
+    .form-control {
+      border: none;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+    }
+  }
+}

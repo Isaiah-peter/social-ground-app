@@ -1,5 +1,6 @@
 /* stylelint-disable no-descending-specificity */
 @import "../../varaible.scss";
+@import "../../mixins.scss";
 
 .dropdown-menu {
   background-color: $primary-white;
@@ -48,8 +49,8 @@ header {
     }
 
     & .header-section {
-      display: flex;
-      align-items: center;
+      @include flex;
+
       justify-content: space-between;
 
       .profile-btn {
@@ -106,8 +107,8 @@ header {
 
       .header-left,
       .header-right {
-        display: flex;
-        align-items: center;
+        @include flex;
+
         color: $primary-white;
       }
 
@@ -198,12 +199,11 @@ header {
 
         .btn-group {
           position: relative;
-          display: flex;
-          align-items: center;
           vertical-align: middle;
-          justify-content: center;
           margin-bottom: 0;
           padding-left: 0;
+
+          @include abs-flex;
 
           .header-btn {
             list-style: none;
@@ -279,10 +279,8 @@ header {
   .dropdown-header {
     padding: 15px;
     border-bottom: 1px solid #edf7fb;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+
+    @include flex;
 
     span {
       color: $primary-grey;
@@ -305,8 +303,7 @@ header {
       margin-left: auto;
 
       ul {
-        display: flex;
-        align-items: center;
+        @include flex;
 
         li + li {
           margin-left: 10px;
@@ -333,10 +330,10 @@ header {
       li {
         margin: 0 6px;
         padding: 12px 6px;
-        display: flex;
-        align-items: center;
         transition: all 0.5s ease;
         list-style: none;
+
+        @include flex;
 
         a {
           text-decoration: none;
@@ -348,8 +345,7 @@ header {
       }
 
       .media {
-        display: flex;
-        align-items: center;
+        @include flex;
 
         img {
           width: 40px;
@@ -402,8 +398,8 @@ header {
       }
 
       .action-btn {
-        display: flex;
-        align-items: center;
+        @include flex;
+
         margin-left: auto;
 
         .btn {
@@ -490,8 +486,7 @@ notification
 }
 
 .media {
-  display: flex;
-  align-items: center;
+  @include flex;
 }
 
 .media-body {

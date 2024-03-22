@@ -3,7 +3,7 @@
 
 .online-user-container {
   width: 96px;
-  position: fixed;
+  position: absolute;
   padding: 0 20px 25px;
   top: 100px;
   right: 30px;
@@ -58,7 +58,56 @@
     }
   }
 
-  .online-users {
-    padding-top: 30px;
+  .online-users,
+  .ofline-user-users {
+    @include abs-flex;
+
+    ul {
+      list-style: none;
+      flex-direction: column;
+      padding-left: 0;
+
+      @include abs-flex;
+
+      .media {
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        .friends-image {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 55px;
+          height: 55px;
+          border-radius: 10px;
+        }
+
+        .online-color {
+          width: 12px;
+          height: 12px;
+          border: 3px solid $primary-white;
+          border-radius: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #2bc60c;
+        }
+      }
+    }
+  }
+
+  .ofline-user-users {
+    ul {
+      li {
+        position: relative;
+      }
+
+      .media {
+        .online-color {
+          background-color: #ff2f25;
+        }
+      }
+    }
   }
 }

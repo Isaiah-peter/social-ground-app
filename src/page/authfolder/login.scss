@@ -81,8 +81,9 @@
         .password-display {
           position: absolute;
           right: 20px;
-          bottom: 13px;
+          bottom: 0;
           width: 20px;
+          transform: translate(10px, -50%);
         }
       }
     }
